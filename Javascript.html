@@ -1,0 +1,55 @@
+  <script>
+    
+    function getInfos(){
+    const dest_ = document.getElementById("dest");
+    const objet_ = document.getElementById("objet");
+
+    let destinataire = dest_.value
+    let objet = objet_.value
+
+    dest_.value = "";
+    objet_.value = "";
+    return [destinataire,objet]
+  }
+
+  function success(){
+    switchButton()
+    google.script.run.success();
+  }
+
+  function failure(){
+    switchButton()
+    google.script.run.failure();
+  }
+
+  function switchButton(){
+    let buttons = document.querySelectorAll("input[type=button]");
+    buttons.forEach(e => e.disabled = !e.disabled)
+  }
+
+  function callGas(){
+    switchButton()
+    let infos = getInfos();
+    google.script.run
+    .withSuccessHandler(success)
+    .withFailureHandler(failure)
+    .sendMail(infos)
+  }
+
+  function templateAndSend() {
+
+  }
+
+  function templatedTest(){
+
+  }
+  </script>
+
+
+
+
+
+
+
+
+  
