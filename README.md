@@ -1,4 +1,7 @@
 # GDoc-to-mail-templater
+#
+## Français
+#
 Ce programme permet de transformer un document Google Doc en Mail et de l'envoyer.
 Il permet aussi de transformer votre Google Docs en template de mail qui va automatiquement récupérer les information depuis un sheet et les associer aux mot clé dans le document. 
 
@@ -20,8 +23,10 @@ Ajoutez votre objet et vous pourrez envoyer le mail a vos destinataires
 Pour cette partie il faut mettre, dans le corps du document, des mots-clé entre double accolade "{{" "}}" ensuite ajouter dans la sidebar l'ensemble des données necessaire, id de la source de donnée sheet, nom de la feuille 
 <br>
 <b>Attention les mots clé et le noms des colonnes de la source de données doivent être identiques</b>
+#
+## English
+#
 
-# GDoc-to-mail-templater
 This program allow you to transform a Gdoc into a mail and send it.
 It also allow you to transform this Gdoc into a mail template, to automatically get data froma Gsheet and to repllace it into tag in the body of the doc.
 
