@@ -24,7 +24,7 @@ function onOpen() {
  * Fonction de gestion de l'affichage de la sidebar
  */
 function openSidebar() {
-  let html = HtmlService.createTemplateFromFile("sidebar").evaluate().setTitle("Envoi de mail").setFaviconUrl("https://i.ibb.co/1zdcTkX/Home-Friend-logo-small.png")
+  let html = HtmlService.createTemplateFromFile("sidebar").evaluate().setTitle("Envoi de mail")
   DocumentApp.getUi().showSidebar(html)
 }
 /**
