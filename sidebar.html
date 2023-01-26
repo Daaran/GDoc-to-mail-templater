@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <base target="_top">
+  <!-- Styleshee start -->
+  <style>
+    #container {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+    }
+
+    span {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+    }
+
+    input[type='button'] {
+      margin-bottom: 15px
+    }
+  </style>
+  <!-- Stylesheet end -->
+</head>
+<!-- Body Start -->
+
+<body>
+  <div id="container">
+    <p>
+      Cet outil vous permet d'envoyer un mail conservant la mise en forme de votre google docs
+    </p>
+    <span>
+      <label for="dest">Destinataire(s) (séparés par une virgule)</label>
+      <input id="dest">
+    </span>
+    <span>
+      <label for="objet">Objet</label>
+      <input id="objet">
+    </span>
+    <hr>
+    <input onclick="callGas()" id="send" type="button" value="Envoyer">
+    <hr>
+    <span>
+      <h1>Template</h1>
+      <small>Pensez à utiliser le meme nom pour les mots a remplacer que les en-têtes de colone de la source de donnée et les mettre entre "{{ }}" </small>
+    </span>
+    <span>
+      <label for="dataSource">Source de donnée (id)</label>
+      <input id="dataSource">
+    </span>
+        <span>
+      <label for="dataSheet">Nom de la feuille (ex: Feuille 1)</label>
+      <input id="dataSheet">
+    </span>
+    <span>
+      <label for="objetTemplated">Objet du mail</label>
+      <input id="objetTemplated">
+    </span>
+    <span>
+      <input onclick="templatedTest()" id="sendTest" type="button" value="Envoyer un mail de test">
+    </span>
+    <span>
+      <input onclick="templateAndSend()" id="ProcessAndSend" type="button" value="Remplir et envoyer">
+    </span>
+  </div>
+  <!-- Script start -->
+  <?!= include('Javascript'); ?>
+  <!-- Script end -->
+</body>
+<!-- Body END -->
+
+</html>
+<!-- 
+Please give me some space...
+
+
+
+THanks 
+ -->
