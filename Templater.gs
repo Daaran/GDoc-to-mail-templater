@@ -19,12 +19,16 @@ function findText(docId,list) {
   doc.saveAndClose()
   return docId;
 }
-
+/**
+* Function to find and replace text 
+*/
 function TextEquiv(text) {
   text = text.toString()
   return text.replace('{{','').replace('}}','')
 }
-
+/**
+* Function to copy doc
+*/
 function copyDoc(mail) {
   Logger.log("Copie du document en cours pour "+mail)
   const doc = DocumentApp.getActiveDocument();
@@ -52,7 +56,9 @@ function prepareData(id, sheetName) {
   })
   return out
 }
-
+/**
+* Function to remove file from drive 
+*/
 function deleteFile(fileId){
   Drive.Files.remove(fileId)
 }
