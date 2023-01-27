@@ -7,6 +7,7 @@ Il permet aussi de transformer votre Google Docs en template de mail qui va auto
 ## Mise en place
 Commencer par créer un document GDoc et associez y un document App Script
 Copiez les fichier dans App Script
+Ajouter les services Drive api et Docs api
 
 ## Fonctionement
 Un menu est ajouté au gDoc, il permet d'ouvrir la sidebar
@@ -31,6 +32,7 @@ It also allow you to transform this Gdoc into a mail template, to automatically 
 
 ## Settings
 First create a new Google Doc file, and add it an app script extention project. Then copy the files into the AppScript project.
+Add services : Drive api and Docs api
 
 ## Fonctionement
 A menu is aded to the Gdoc menu, this let you open a sidebar.
