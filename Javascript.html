@@ -1,5 +1,7 @@
   <script>
-    
+    /**
+    * Func to retrive the data inserted 
+    */
     function getInfos(){
     const dest_ = document.getElementById("dest");
     const objet_ = document.getElementById("objet");
@@ -11,22 +13,30 @@
     objet_.value = "";
     return [destinataire,objet]
   }
-
+  /**
+  * Success handler
+  */
   function success(){
     switchButton()
     google.script.run.success();
   }
-
+   /**
+  * failure handler
+  */
   function failure(){
     switchButton()
     google.script.run.failure();
   }
-
+  /**
+  * func to switch button state (disabled <-> enabled)
+  */
   function switchButton(){
     let buttons = document.querySelectorAll("input[type=button]");
     buttons.forEach(e => e.disabled = !e.disabled)
   }
-
+    /**
+    * Callback func to comunicate with GAS from sidebar html
+    */
   function callGas(){
     switchButton()
     let infos = getInfos();
@@ -44,12 +54,3 @@
 
   }
   </script>
-
-
-
-
-
-
-
-
-  
