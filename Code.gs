@@ -17,7 +17,7 @@
  * Fonction pour ajouter un menu au google doc permettant d'afficher la sidebar
  */
 function onOpen() {
-  DocumentApp.getUi().createMenu("-HF- Menu").addItem("Ouvrir le menu d'envoi", "openSidebar").addToUi();
+  DocumentApp.getUi().createMenu("-votre nom de menu-").addItem("Ouvrir le menu d'envoi", "openSidebar").addToUi();
   openSidebar();
 }
 /**
